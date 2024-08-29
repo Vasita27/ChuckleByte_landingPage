@@ -1,0 +1,104 @@
+/* Style for the testimonials section */
+
+
+/* Style for the blockquote to remove any unwanted lines or styling */
+blockquote {
+    border: none; /* Remove default border */
+    background: none; /* Remove background if any */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    position: relative; /* For positioning adjustments */
+}
+
+/* Style for the blockquote footer */
+blockquote footer {
+    display: block;
+    font-size: 1rem;
+    color: #6c757d; /* Light gray color for the footer */
+    margin-top: 1rem; /* Space above the footer */
+}
+
+/* Optional: Style the Carousel to ensure proper spacing */
+.carousel-item {
+    text-align: center;
+}
+.testimonial-item {
+    /* Add styles for background color, padding, border, etc. */
+    border: 2px solid #2f65ad;; /* Light gray background */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .client-name {
+    font-weight: bold; /* Make client name bolder */
+    text-decoration: none; /* Remove underline from client name */
+  }
+#testimonials{
+    position: relative;
+    top: 80px;
+}
+.heading-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+/* Style for the heading with line */
+.heading-container h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px; /* Space around the text */
+    background: #fff; /* Background color for text (optional) */
+}
+
+/* Style for the line */
+.heading-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust thickness as needed */
+    background-color: #2F65AD; /* Blue color */
+    z-index: -1; /* Place behind the text */
+    transform: translateY(-50%); /* Center the line vertically */
+}
+.forMargin{
+    position: relative;
+    top: 40px;
+}
+@media (max-width:786px){
+    .testimonial-item{
+        border: none;
+    }
+    .forMargin{
+        position: relative;
+        top: 0px;
+    }
+}
+@media (max-width:300px){
+    .for{
+        position: relative;
+        top: 0px;
+    }
+}
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
+    #testimonials{
+        position: relative;
+        top: -10px;
+    }
+    .forMargin{
+        position: relative;
+        left: 100px;
+    }
+    .image{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 2023px) {
+    #testimonials {
+        position: relative;
+        top: 50px;/* Remove padding or adjust to remove the gap */
+    }
+}

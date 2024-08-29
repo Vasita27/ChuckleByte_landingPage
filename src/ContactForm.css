@@ -1,0 +1,59 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of the square */
+    height: 40px; /* Size of the square */
+    background-color: #f1f1f1; /* Background color of the square */
+    border-radius: 8px; /* Rounded corners of the square */
+    color: #333; /* Icon color */
+    font-size: 20px; /* Icon size */
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Icon color on hover */
+  }
+  .inputs{
+    border: 2px solid #2F65AD;
+  }
+  .social-icons a{
+    background-color: #2F65AD;
+    color:white
+  }
+  @media(max-width:786px){
+    .image{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1023px) {
+    #contact{
+        position: relative;
+        top: -300px;
+    }
+}
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
+  #contact{
+    position: relative;
+    top:20px;
+}
+.form{
+  position: relative;
+  right:170px
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  #contact {
+      position: relative;
+      top: -50px;/* Remove padding or adjust to remove the gap */
+  }
+}

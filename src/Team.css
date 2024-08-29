@@ -1,0 +1,53 @@
+.card{
+    border: 2px solid  #2f65ad;
+
+}
+.bodyy{
+    background-color: #2f65ad;
+    color: white !important;
+    border-radius: 1% !important;
+}
+#team{
+    position: relative;
+    top: 120px;
+}
+@media only screen and (min-width: 360px) and (max-width: 400px) {
+    #team{
+        position: relative;
+        margin-top:-190px;
+         /* Remove padding or adjust to remove the gap */
+    }
+}
+@media only screen and (min-width: 365px) and (max-width: 370px) {
+    #team{
+        position: relative;
+        margin-top:-190px;
+         /* Remove padding or adjust to remove the gap */
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    #team{
+        position: relative;
+        top: -100px;
+        margin-top: 200px;
+         /* Remove padding or adjust to remove the gap */
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 830px) {
+    #team{
+        position: relative;
+        top:-100px;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 2023px) {
+    #team {
+        position: relative;
+        top: 60px;/* Remove padding or adjust to remove the gap */
+    }
+}
+.whole :hover{
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+}

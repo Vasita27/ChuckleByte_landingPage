@@ -1,0 +1,213 @@
+/* Style for the About Us container */
+.about-us-container {
+    margin-top: 60px;
+}
+
+/* Style for the heading */
+
+
+/* Style for the paragraph on mobile */
+.about-us-paragraph {
+    display: none;
+}
+
+.d-md-none .about-us-paragraph {
+    display: block;
+}
+
+/* Style for the content container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for squares container */
+.squares-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.square {
+    background: #2F65AD; /* Adjust background color as needed */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.square:hover {
+    background: #1f4a8d; /* Darker shade on hover */
+}
+
+/* Style for the info box container */
+.info-box-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for info box */
+.info-box {
+    display: none;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Show info box when selected */
+.info-box.visible {
+    display: block;
+}
+
+/* Style for the SVG container */
+.svg-container {
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure responsive behavior */
+@media (max-width: 768px) {
+    .d-none {
+        display: none !important;
+    }
+    .about-us-container{
+        position: relative;
+        top: 100px;
+    }
+
+    .d-md-block {
+        display: block !important;
+    }
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Default state */
+.svg-container {
+    /* No animation here */
+}
+
+/* Animation class */
+.svg-container.animate {
+    animation: bounceIn 1s ease-out;
+}
+@media only screen and (min-width: 300px) and (max-width: 385px) {
+    .about-us-container {
+        position: relative;
+        margin-top: 100px !important; /* Remove padding or adjust to remove the gap */
+    }
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.svg-container img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+}
+
+
+/* Style for the heading container */
+/* Style for the heading container */
+.about-us-heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+/* Style for the heading with line */
+.about-us-heading h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px; /* Space around the text */
+    background: #fff; /* Background color for text (optional) */
+}
+
+/* Style for the line */
+.about-us-heading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust thickness as needed */
+    background-color: #2F65AD; /* Blue color */
+    z-index: -1; /* Place behind the text */
+    transform: translateY(-50%); /* Center the line vertically */
+}
+
+
+@media (max-width :450px){
+    .about-us-container{
+        position: relative;
+        top: -140px;
+        margin-bottom:100px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .about-us-container {
+        position: relative;
+        top: -800px; /* Remove padding or adjust to remove the gap */
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .about-us-container {
+        position: relative;
+        top: -50px;/* Remove padding or adjust to remove the gap */
+    }
+}
+@media only screen and (min-width: 760px) and (max-width: 830px) {
+    .about-us-container{
+        position: relative;
+        top:-90px;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 750px) {
+    .about-us-container{
+        position: relative;
+        top:10px;
+    }
+  }
+  @media only screen and (min-width: 1014px) and (max-width: 1224px) {
+    .about-us-container {
+        position: relative;
+        top: 20px;/* Remove padding or adjust to remove the gap */
+    }
+}
