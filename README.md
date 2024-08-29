@@ -1,3 +1,33 @@
+# Company Landing Page
+
+This is a React application developed as part of an internship project at ChuckleByte Technologies. The app is deployed on Netlify and includes features such as interactive components, testimonials, and a contact section.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+
+## Project Overview
+
+This project is a web application built with React and deployed to Netlify. The app is designed to be responsive and includes animations, a testimonials section, and a contact form. It was created as part of a web development internship at ChuckleByte Technologies, demonstrating skills in frontend development and deployment.
+
+## Features
+
+- **Responsive Design:** The application is fully responsive and works across all device sizes, from mobile phones to large desktops.
+- **Interactive Components:** The app includes smooth animations, interactive buttons, and dynamic content display to enhance user experience.
+- **Testimonials Section:** A dedicated section to showcase user testimonials with a smooth fade-in effect.
+- **Contact Section:** A simple and functional contact form that allows users to send inquiries or feedback directly through the website.
+
+## Technologies Used
+- **React:** JavaScript library for building user interfaces.
+- **CSS:** For styling and ensuring a responsive design.
+- **HTML5:** For structuring the web pages.
+- **Javascript:** For the entire functionality of the website.
+
+## Installation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
