@@ -1,3 +1,15 @@
-body{
-  background-color: black;
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the root container covers the full width */
+#root {
+  overflow-x: hidden;
+}
+
+/* Apply box-sizing globally */
+* {
+  box-sizing: border-box;
 }

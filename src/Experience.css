@@ -1,0 +1,83 @@
+#experience {
+    background-color: #fff;
+    padding-bottom: 50px;
+    margin-top: 30px;
+  }
+  
+  .icon-container {
+    background-color: #2F65AD;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  @media (max-width: 768px) {
+    .icon-container{
+        display: none;
+    }
+    #experience{
+        margin-bottom: 50px !important;
+    }
+
+}
+  .experience-content {
+    padding-left: 20px;
+  }
+  
+  .experience-content h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .experience-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .experience-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .experience-content p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    border: 2px solid #2F65AD;
+    border-radius: 8px;
+  }
+  
+/* Style for the heading container */
+.heading-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+/* Style for the heading with line */
+.heading-container h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px; /* Space around the text */
+    background: #fff; /* Background color for text (optional) */
+}
+
+/* Style for the heading line */
+.heading-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust thickness as needed */
+    background-color: #2f65ad; /* Blue color */
+    z-index: -1; /* Place behind the text */
+    transform: translateY(-50%); /* Center the line vertically */
+}

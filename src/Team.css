@@ -1,53 +1,221 @@
-.card{
-    border: 2px solid  #2f65ad;
+/* Team.css */
 
+/* Section Styling */
+#projects {
+    background-color: #fff;
+    padding: 50px 0;
 }
-.bodyy{
-    background-color: #2f65ad;
-    color: white !important;
-    border-radius: 1% !important;
-}
-#team{
+
+/* Heading Styling */
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the heading and the lines */
+    margin-bottom: 30px;
     position: relative;
-    top: 120px;
-}
-@media only screen and (min-width: 360px) and (max-width: 400px) {
-    #team{
-        position: relative;
-        margin-top:-190px;
-         /* Remove padding or adjust to remove the gap */
-    }
-}
-@media only screen and (min-width: 365px) and (max-width: 370px) {
-    #team{
-        position: relative;
-        margin-top:-190px;
-         /* Remove padding or adjust to remove the gap */
-    }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-    #team{
-        position: relative;
-        top: -100px;
-        margin-top: 200px;
-         /* Remove padding or adjust to remove the gap */
-    }
+.heading-container h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
 }
 
-@media only screen and (min-width: 760px) and (max-width: 830px) {
-    #team{
-        position: relative;
-        top:-100px;
+.heading-line {
+    flex: 1; /* Makes the lines take available space */
+    height: 4px;
+    background-color: #1f4a8d;
+}
+
+.heading-line.left {
+    margin-right: 10px;
+}
+
+.heading-line.right {
+    margin-left: 10px;
+}
+
+
+/* Projects Container */
+.projects-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Ensures uniform card heights */
+}
+
+/* Column Setup */
+.projects-container .col-md-4 {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Card Styling */
+.project-card {
+    border: 2px solid #1f4a8d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 500px; /* Uniform Card Height */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Pop-Up Effect on Scroll */
+.project-card.pop-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image Styling */
+.project-image {
+    width: 100%;
+    height: 170px; /* Fixed image height */ /* Keeps image proportions */
+    
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.project-card:hover .project-image {
+    transform: scale(1.1);
+}
+
+/* Card Body */
+.project-card .body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Title Styling */
+.project-card .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1f4a8d;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.project-card .description {
+    font-size: 0.9rem;
+    color: #555;
+    flex-grow: 1;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/* Skills Text */
+.project-card .skills {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.project-card .btn-primary {
+    background-color: #1f4a8d;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn-primary:hover {
+    background-color: #0f357c;
+}
+
+/* Hover Effect on Card */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        height: auto;
     }
-  }
-  @media only screen and (min-width: 1024px) and (max-width: 2023px) {
-    #team {
-        position: relative;
-        top: 60px;/* Remove padding or adjust to remove the gap */
+
+    .project-image {
+        height: 120px;
     }
 }
-.whole :hover{
-    transform: scale(1.05); /* Slightly zoom in on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+/* Team.css */
+
+/* Container Styling */
+.projects-container {
+    max-width: 1200px;
+    margin: auto;
 }
+
+/* Card Styling */
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.project-image {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Card Body Styling */
+.project-card .body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Title and Description */
+.project-card .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-card .description {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card .skills {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .project-card .title {
+        font-size: 1rem;
+    }
+
+    .project-card .description {
+        font-size: 0.8rem;
+    }
+
+    .project-card .skills {
+        display: none;
+    }
+    
+}
+

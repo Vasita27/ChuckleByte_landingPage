@@ -37,9 +37,9 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div className="container about-us-container" id="about" style={{ marginTop: "60px" }} ref={aboutUsRef}>
+        <div className="container about-us-container" id="levels" style={{ marginTop: "60px" }} ref={aboutUsRef}>
             <div className="about-us-heading">
-                <h2>About Us</h2>
+                <h2>Level of Skills</h2>
             </div>
             <div className="row">
                 <div className="col-md-6">
@@ -49,33 +49,56 @@ const AboutUs = () => {
                         </p>
                         <div className="content-container">
                             <div className="squares-container">
-                                <div className="square" onClick={() => handleSquareClick('Mission')}>
-                                    Mission
-                                </div>
-                                <div className="square" onClick={() => handleSquareClick('Vision')}>
-                                    Vision
-                                </div>
-                                <div className="square" onClick={() => handleSquareClick('Values')}>
-                                    Values
-                                </div>
-                                <div className="square" onClick={() => handleSquareClick('Programs')}>
-                                    Programs
-                                </div>
+                                
                             </div>
                             <div className="info-box-container">
-                                <div className={`info-box ${selectedInfo ? 'visible' : ''}`}>
-                                    {selectedInfo === 'Mission' && <p>At BRUTON Technologies, our approach is client-centric and results-driven. We believe in building long-term relationships with our clients through continuous collaboration, transparency, and excellence in service delivery. By employing industry best practices and staying ahead of technology trends, we ensure that our solutions not only meet current needs but also adapt to future growth.</p>}
-                                    {selectedInfo === 'Vision' && <p>At BRUTON Technologies, we pride ourselves on being a trailblazer in the world of software development and digital transformation. Founded with the vision to empower businesses and individuals alike, our mission is to deliver intelligent, scalable, and user-centric technology solutions that help clients thrive in the fast-paced digital age.
-
-We specialize in designing, developing, and deploying a wide range of custom software solutions that cater to the diverse needs of businesses, startups, and enterprises. Our expertise spans across a broad spectrum of industries, helping us to deliver tailored solutions that provide high value and measurable results.
-</p>}
-                                    {selectedInfo === 'Values' && <p>Innovation: Constantly pushing boundaries and embracing new technologies to provide state-of-the-art solutions.
-<br></br>Quality: Delivering exceptional work that meets the highest standards of excellence.<br></br>
-Collaboration: Working closely with clients and team members to achieve outstanding results.<br></br>
-Integrity: Upholding honesty, transparency, and trust in all aspects of our work.<br></br>
-Growth: Encouraging continuous learning and development for both our team and clients.</p>}
-                                    {selectedInfo === 'Programs' && <p> Whether you are a business seeking cutting-edge technology solutions, or a tech professional looking for an exciting opportunity to grow, BRUTON Technologies is the place for you. Our dynamic and inclusive environment fosters creativity, innovation, and professional growth, making us a trusted partner in the digital transformation journey.</p>}
-                                </div>
+                            <section className="container">
+      <br />
+      <div className="bars" style={{position:"relative",left:"50px"}}>
+        <div>
+          <h5>Python</h5>
+          <div className="progress" role="progressbar" aria-label="Python skill level" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '75%', backgroundColor:' #2F65AD' }}></div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <h5>C</h5>
+          <div className="progress" role="progressbar" aria-label="C skill level" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '30%', backgroundColor:' #2F65AD'}}></div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <h5>Java</h5>
+          <div className="progress" role="progressbar" aria-label="Java skill level" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '30%', backgroundColor:' #2F65AD' }}></div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <h5>HTML, CSS, JavaScript</h5>
+          <div className="progress" role="progressbar" aria-label="HTML, CSS, JavaScript skill level" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '75%', backgroundColor:' #2F65AD' }}></div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <h5>MERN</h5>
+          <div className="progress" role="progressbar" aria-label="MERN skill level" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '50%',backgroundColor:' #2F65AD'}}></div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <h5>SQL</h5>
+          <div className="progress" role="progressbar" aria-label="SQL skill level" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '75%', backgroundColor:' #2F65AD' }}></div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </section>
                             </div>
                         </div>
                     </div>

@@ -1,40 +1,100 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faMobileAlt, faBuilding, faCloud, faShieldAlt, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
-import './Services.css'; // Import the CSS file
+import { faC, faCubes, faFileCode ,faDatabase} from '@fortawesome/free-solid-svg-icons';
+import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaTools } from 'react-icons/fa'; // Updated icon
+import { FaDatabase } from 'react-icons/fa';
+import './Services.css';
 
-const services = [
-    { title: "Custom Software Development", description: "We craft bespoke software tailored to meet the unique challenges and needs of your business, ensuring high performance, scalability, and security.", icon: faCode },
-    { title: "Web & Mobile Development", description: "From responsive websites to feature-rich mobile apps, we develop digital experiences that engage users and drive results.", icon: faMobileAlt },
-    { title: "Enterprise Solutions", description: "We deliver enterprise-level solutions for automation, productivity enhancement, and seamless operations management.", icon: faBuilding },
-    { title: "Cloud Solutions & DevOps", description: "Our cloud computing services enable businesses to leverage scalable, secure, and cost-effective infrastructure, while our DevOps practices ensure efficient deployment and maintenance.", icon: faCloud },
-    { title: "Cybersecurity Services", description: "Protecting your digital assets is our priority. We provide end-to-end cybersecurity solutions to safeguard data and ensure compliance.", icon: faShieldAlt },
-    { title: "IT Consulting", description: "We help businesses make informed technology decisions by providing strategic IT consulting and support to enhance overall performance and growth.", icon: faHandsHelping },
+const skills = [
+    {
+        title: "Python",
+        description: "Intermediate level Python programmer with knowledge in libraries like NumPy, Pandas, Matplotlib, etc.",
+        icon: FaPython,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: true
+    },
+    {
+        title: "Beginner Java",
+        description: "Fundamental understanding of Java syntax, loops, conditionals, and basic OOP concepts.",
+        icon: FaJava,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: true
+    },
+    {
+        title: "Basic C Programming",
+        description: "Certified in basic C programming, with knowledge of loops, conditionals, and functions.",
+        icon: faC,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: false
+    },
+    {
+        title: "HTML, CSS, and JavaScript",
+        description: "Strong foundation in building responsive web designs using HTML, CSS, and JavaScript.",
+        icon: faFileCode,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: false
+    },
+    {
+        title: "MERN Stack",
+        description: "Proficient in building full-stack applications using MongoDB, Express.js, React.js, and Node.js.",
+        icon: FaReact,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: true
+    },
+    {
+        title: "Blockchain",
+        description: "Basic understanding of blockchain technology and its applications.",
+        icon: faCubes,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: false
+    },
+    {
+        title: "Blender",
+        description: "Beginner-level experience in 3D modeling and animation using Blender.",
+        icon: FaTools, // Updated to FaTools
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: true
+    },
+    {
+        title: "SQL",
+        description: "Proficient in SQL for database management, querying, and optimization.",
+        icon: faDatabase, // New FontAwesome icon for SQL
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: false
+    }
 ];
 
-const Services = () => {
+const Skills = () => {
     return (
-        <Container className='service' id='services'>
+        <Container className='skills' id='skills'>
             <Row className="mb-5">
-                <Col>
-                    <div className="heading-container">
-                        <h2 className="text-center">Our Services</h2>
-                        <div className="heading-line"></div>
-                    </div>
-                </Col>
+            <Col>
+        <div className="heading-container">
+            <div className="heading-line left"></div>
+            <h2 className="text-center">My Skills</h2>
+            <div className="heading-line right"></div>
+        </div>
+    </Col>
             </Row>
             <Row>
-                {services.map((service, index) => (
+                {skills.map((skill, index) => (
                     <Col md={6} key={index} className="my-4">
-                        <Card className="service-card d-flex flex-row align-items-center">
+                        <Card className="skill-card d-flex flex-row align-items-center">
                             {index % 2 === 0 ? (
                                 <>
-                                    <FontAwesomeIcon icon={service.icon} size="4x" className="text icon mr-4" />
+                                    {skill.isReactIcon ? (
+                                        <skill.icon size={64} className="text icon mr-4" />
+                                    ) : (
+                                        <FontAwesomeIcon icon={skill.icon} size="4x" className="text icon mr-4" />
+                                    )}
                                     <div>
                                         <Card.Body>
-                                            <Card.Title>{service.title}</Card.Title>
-                                            <Card.Text>{service.description}</Card.Text>
+                                            <Card.Title>{skill.title}</Card.Title>
+                                            <Card.Text>{skill.description}</Card.Text>
+                                            <Button style={{backgroundColor:"#1f4a8d",width:"150px"}} href={skill.link}>
+                                                See Projects
+                                            </Button>
                                         </Card.Body>
                                     </div>
                                 </>
@@ -42,19 +102,26 @@ const Services = () => {
                                 <>
                                     <div className="text-left">
                                         <Card.Body>
-                                            <Card.Title>{service.title}</Card.Title>
-                                            <Card.Text>{service.description}</Card.Text>
+                                            <Card.Title>{skill.title}</Card.Title>
+                                            <Card.Text>{skill.description}</Card.Text>
+                                            <Button style={{backgroundColor:"#1f4a8d",width:"150px"}} href={skill.link}>
+                                               See Projects
+                                            </Button>
                                         </Card.Body>
                                     </div>
-                                    <FontAwesomeIcon icon={service.icon} size="4x" className="text icon ml-4"/>
+                                    {skill.isReactIcon ? (
+                                        <skill.icon size={64} className="text icon ml-4" />
+                                    ) : (
+                                        <FontAwesomeIcon icon={skill.icon} size="4x" className="text icon ml-4" />
+                                    )}
                                 </>
                             )}
                         </Card>
                     </Col>
                 ))}
-            </Row>
+            </Row>  
         </Container>
     );
 };
 
-export default Services;
+export default Skills;

@@ -3,19 +3,43 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Testimonials.css'; // Import the CSS file
 
 const testimonials = [
-  { quote: "BRUTON Technologies transformed our business.", name: "Client A" },
-  { quote: "Top-notch services and support.", name: "Client B" },
-  { quote: "Top-notch services and support.", name: "Client C" },
-  { quote: "Top-notch services and support.", name: "Client D" },
+  { 
+    quote: "Published a Chrome extension that instantly defines words.",
+    name: <a href='https://chrome.google.com/webstore/detail/lofhmfodifdllaikpoohfjecfoaondff' target="_blank" rel="noopener noreferrer" style={{ color: '#133E87', textDecoration: 'none' }}>View Extension</a>
+  },
+  { 
+    quote: "Achieved Top 1% certification in C from NPTEL.",
+    name: <a href='https://drive.google.com/file/d/1afAxMRP92ho8Zf5CPi_i3eCu4wAiDoh7/view' target="_blank" rel="noopener noreferrer" style={{ color: '#133E87', textDecoration: 'none' }}>View Certificate</a>
+  },
+  { 
+    quote: "Junior Coordinator at Communicando, Literary Club of CBIT.",
+    name: ""
+  },
+  { 
+    quote: "Senior Coordinator at Communicando, Literary Club of CBIT.",
+    name: ""
+  },
+  { 
+    quote: "Junior Coordinator at CBIT Open Source Community.",
+    name: ""
+  },
+  { 
+    quote: "Secured 946th rank in TS EAMCET.",
+    name: ""
+  },
+  { 
+    quote: "Secured 1024th rank in AP EAMCET.",
+    name: ""
+  },
 ];
 
 const Testimonials = () => {
   return (
-    <Container id="testimonials" className="py-5">
+    <Container className="py-5">
       <div className='heading-container'>
-        <h2 className="text-center">Testimonials</h2></div>
+        <h2 className="text-center">Achievements</h2></div>
       <Container>
-        <div className='row'>
+        <div className='row' id="achievements">
           <div className='col-md-8 col-sm-6 forMargin'>
         <Carousel interval={1500}>
           {testimonials.map((testimonial, index) => (
@@ -23,11 +47,10 @@ const Testimonials = () => {
               <Row className="justify-content-center">
                 <Col md={8} className="testimonial-item">
                   <blockquote className="blockquote text-center">
-                    <p className="mb-4">“{testimonial.quote}”</p>
-                    <footer className="blockquote-footer">
-                      <span className="client-name">{testimonial.name}</span>
-                    </footer>
+                    <p className="mb-4">“{testimonial.quote}” <br></br><br></br> {testimonial.name}
+                    </p>
                   </blockquote>
+                  
                 </Col>
               </Row>
             </Carousel.Item>

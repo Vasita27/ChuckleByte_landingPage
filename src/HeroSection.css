@@ -6,6 +6,55 @@
   padding: 20px;
   background-color: #fff;
 }
+/* Navbar Styling */
+.custom-navbar {
+  background-color: #ffffff; /* White background */
+  padding: 5px 20px; /* Reduce padding for smaller height */
+  height: 60px; /* Decrease navbar height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Logo */
+.custom-navbar .logo {
+  height: 40px; /* Adjust logo height */
+}
+
+/* Navbar Links */
+.custom-navbar .navbar-nav .nav-link {
+  color: #2f65ad !important;
+  font-size: 18px;
+  margin: 0 10px; /* Add spacing between links */
+  font-weight: bold;
+}
+
+/* Navbar List Alignment */
+.custom-navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Collapse Button */
+.custom-navbar .navbar-toggler {
+  border: none;
+}
+
+/* Navbar Hover Effects */
+.custom-navbar .nav-link:hover {
+  color: #1a3d7c !important;
+}
+
+/* Responsive Navbar Adjustments */
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 5px 0;
+  }
+  
+}
 
 .logo {
   font-size: 24px;
@@ -144,15 +193,12 @@
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
+  
   .background{
     clip-path: polygon(0 0, 100% 0, 500% 0%, 0% 40%, 0 50%);
   }
   .hero-section{
-    height:103vh ;
+    height:fit-content ;
   }
   .tablet-slider {
     display: none;
@@ -161,7 +207,14 @@
   .contact-btn {
     background-color: #2F65AD;
   }
-  
+  .myimage{
+    display: block;
+    align-items: center ;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    align-content: center;
+  }
   .animated-box{
     position: relative;
     top:20px;
@@ -174,6 +227,7 @@
     max-width: 100%;
     margin-bottom: 30px;
   }
+  
  .navbar{
   position: relative;
  }
@@ -188,6 +242,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .content h1 {
     font-size: 40px;
@@ -201,8 +256,7 @@
     clip-path: polygon(0 0, 300% 0, 680% 0%, 0% 100%, 0 50%);
   }
   .hero-section{
-    height:103vh ;
-    position: relative;
+    height:fit-content ;
   }
   .tablet-slider {
     position: relative;
@@ -226,6 +280,19 @@
   .subscribe-form .subscribe-btn {
     border-radius: 20px;
   }
+  .myimage{
+    position: relative;
+    top: 20px;
+    display: block;
+    align-items: center ;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    align-content: center;
+  }
+}
+.myimage{
+  display: none;
 }
 /* Slide in effect for content */
 .slide-in-left {
@@ -360,6 +427,14 @@
     width: 100%;
     border-radius: 20px;
   }
+  .myimage{
+    display: block;
+    align-items: center ;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    align-content: center;
+  }
 
   .tablet-slider {
     width: 100%;
@@ -382,22 +457,38 @@
       position: relative;
        /* Remove padding or adjust to remove the gap */
   }
+  .myimage{
+    display: block;
+    align-items: center ;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    align-content: center;
+  }
+  
   .background{
     clip-path: polygon(0 0, 90% 0, 300% 0%, 0% 60%, 0 50%);
   }.animated-box{
-    display: none;
+   
   }
 }
 
+@media only screen and (min-width:800px) and (max-width:850px){
+  .myimage{
+    display: block;
+    align-items: center ;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    align-content: center;
+    height: 350px;
+  }
+
+
+}
 
 @media only screen and (min-width: 760px) and (max-width: 1010px) {
-  .hero-section {
-      position: relative;
-      top: 30px; /* Remove padding or adjust to remove the gap */
-  }
-  .background{
-    clip-path: polygon(0 0, 100% 0, 200% 40%, 0% 60%, 0 100%);
-  }
+ 
 }
 @media only screen and (min-width: 1025px) and (max-width: 1310px) {
   .hero-section {
