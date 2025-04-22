@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faC, faCubes, faFileCode ,faDatabase} from '@fortawesome/free-solid-svg-icons';
-import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaTools } from 'react-icons/fa'; // Updated icon
-import { FaDatabase } from 'react-icons/fa';
+import { FaPython, FaJava, FaReact } from 'react-icons/fa'; // Updated icon
+
 import './Services.css';
 
 const skills = [
@@ -43,25 +43,25 @@ const skills = [
         isReactIcon: true
     },
     {
-        title: "Blockchain",
-        description: "Basic understanding of blockchain technology and its applications.",
-        icon: faCubes,
-        link: "#projects", // Updated link to go to team section
-        isReactIcon: false
-    },
-    {
-        title: "Blender",
-        description: "Beginner-level experience in 3D modeling and animation using Blender.",
-        icon: FaTools, // Updated to FaTools
-        link: "#projects", // Updated link to go to team section
-        isReactIcon: true
-    },
-    {
         title: "SQL",
         description: "Proficient in SQL for database management, querying, and optimization.",
         icon: faDatabase, // New FontAwesome icon for SQL
         link: "#projects", // Updated link to go to team section
         isReactIcon: false
+    },
+    {
+        title: "REST APIs",
+        description: "Worked with REST APIs for data retrieval and manipulation in web applications.",
+        icon: faCubes,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: false
+    },
+    {
+        title: "React Native (Novice)",
+        description: "Basic understanding of React Native for mobile app development.",
+        icon: FaReact,
+        link: "#projects", // Updated link to go to team section
+        isReactIcon: true
     }
 ];
 

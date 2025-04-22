@@ -12,6 +12,14 @@ const testimonials = [
     name: <a href='https://drive.google.com/file/d/1afAxMRP92ho8Zf5CPi_i3eCu4wAiDoh7/view' target="_blank" rel="noopener noreferrer" style={{ color: '#133E87', textDecoration: 'none' }}>View Certificate</a>
   },
   { 
+    quote: "Won an interstate hackacthon in web development domain held at CBIT.",
+    name: <a href='https://www.linkedin.com/posts/vasita-puppala-955123252_hackathonwinner-webdevelopment-ai-activity-7309259280799449090-rS3p?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5PZ5EBx5-wm4OKH3_Y0gRqcs5jqEGzfk0' target="_blank" rel="noopener noreferrer" style={{ color: '#133E87', textDecoration: 'none' }}>View Achievement</a>
+  },
+  { 
+    quote: "Made it to the top10 in HackIndia, Telangana, among 500 participants.",
+    name: <a href='https://www.linkedin.com/posts/srishti-turki-7a4510266_hackathon-hackindia-cbit-ugcPost-7317220728188162049-2Jbl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5PZ5EBx5-wm4OKH3_Y0gRqcs5jqEGzfk0' target="_blank" rel="noopener noreferrer" style={{ color: '#133E87', textDecoration: 'none' }}>View Achievement</a>
+  },
+  { 
     quote: "Junior Coordinator at Communicando, Literary Club of CBIT.",
     name: ""
   },

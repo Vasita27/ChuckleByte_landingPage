@@ -4,6 +4,48 @@ import "./Team.css";
 
 const projects = [
     {
+        title: "Realtime AI Powered exercise evaluation app for squats and pushups using MediaPipe",
+        description: "A real-time browser-based fitness app uses MediaPipe Pose Landmarker for pose detection and Three.js for 3D visual feedback, evaluating squats and push-ups by identifying incorrect postures. It also features image-based analysis to assess form accuracy from static images.",
+        image: "https://api.bigsteptech.com/uploads/11_2_da6244fba7.png",
+        skills: "HTML, CSS, JavaScript, Three.js, MediaPipe",
+        link: "https://vasita27.github.io/Real_Time_AI_Powered_Exercise_Evaluation/"
+    },
+    {
+        title: "Traque : Streamlining college bus operations",
+        description: "Traque is a real-time bus tracking and management app designed for students, faculty, parents, and admins to monitor routes, track live bus locations, and manage transport services efficiently. It also features chat, announcements, payment tracking, and bus pass renewal functionalities.",
+        image: "https://www.milesight-iot.com/wp-content/uploads/2019/04/bus-tracking.png",
+        skills: "React Native, Node.js, Express, MongoDB, HTML, CSS, Google Maps API, HERE Maps API, Socket.io",
+        link: "https://github.com/orgs/Mini-Project2711/repositories"
+    },
+    {
+        title: "Haven : Your virtual safe space",
+        description: "A mental wellness app featuring personalized journaling, mood capsules, and mood-based chat channels. Includes an AI assistant with speech support and tailored responses. Features an affirmation mirror that gives real-time feedback on spoken affirmations.",
+        image: "https://www.hillphysicians.com/wp-content/uploads/2024/01/JAN-MentalWellness-2048x1363.jpg",
+        skills: "React, Node.js, Express, MongoDB, HTML, CSS, Gemini API, Google AI Studio",
+        link: "https://github.com/orgs/SudheeVYRTual/repositories"
+    },
+    {
+        title: "ChuckleByte Technologies: Full Stack Website",
+        description: "A full-stack website for ChuckleByte Technologies. It contains dark and light themes, internship registration, and miscellaneous details.",
+        image: "https://jaro-website.s3.ap-south-1.amazonaws.com/2024/03/Features-of-Mern-stack-development-services-You-Should-Know-768x397-1.png",
+        skills: "Bootstrap, CSS, DBMS, GitHub, HTML5, JavaScript, MongoDB, Node.js, OOP, REST APIs, React.js, Express",
+        link: "https://final-task-chucklebyte-qohm.vercel.app/"
+    },
+    {
+        title: "Blog Website",
+        description: "A basic blog website with JWT-based authentication where users can read blogs and content creators can publish their own. It also features a section for trending and latest blogs.",
+        image: "https://www-static.cdn-one.com/cmsimages/en_what-is-a-blog-1.png",
+        skills: "React.js, Node.js, Express, MongoDB, HTML, CSS",
+        link: "https://github.com/Vasita27/BlogWebsite"
+    },
+    {
+        title: "Dr.Docs : An AI Powered Document Retrieval System",
+        description: "An AI based document retrieval system, which takes in user's natural language query , converts it into an embedding and then parses through the previous uploaded documents' embeddings to perform a similarity check. FAISS is used for indexing for efficiency purposes. Additional features like Q & A with a document, integration of google drive and related online resources retrieval is also done.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiRCRhz2aEYQuZNr6IDR4whr6YQmKwSvNIlw&s",
+        skills: "Python, FAISS, MERN, Google Drive API, SERP API, Gemini API, OpenClip Model ",
+        link: "https://github.com/HackIndiaDAO/HackIndia-Spark-6-2025-DAO"
+    },
+    {
         title: "Movie Recommendation System",
         description: "A movie recommendation system working on a large database of movies with all the required information like title, director, genre, keywords, etc. Python libraries like pandas for data pre-processing, sklearn for cosine similarity, and NLTK for natural language processing are used.",
         image: "https://miro.medium.com/v2/resize:fit:1400/1*cG6U1qstYDijh9bPL42e-Q.jpeg",
@@ -23,13 +65,6 @@ const projects = [
         image: "https://developer.chrome.com/static/docs/ai/built-in-apis/images/cover.png",
         skills: "HTML, APIs, Flask, Node.js, Express",
         link: "https://github.com/Vasita27/GoogleAI"
-    },
-    {
-        title: "ChuckleByte Technologies: Full Stack Website",
-        description: "A full-stack website for ChuckleByte Technologies. It contains dark and light themes, internship registration, and miscellaneous details.",
-        image: "https://jaro-website.s3.ap-south-1.amazonaws.com/2024/03/Features-of-Mern-stack-development-services-You-Should-Know-768x397-1.png",
-        skills: "Bootstrap, CSS, DBMS, GitHub, HTML5, JavaScript, MongoDB, Node.js, OOP, REST APIs, React.js, Express",
-        link: "https://final-task-chucklebyte-qohm.vercel.app/"
     },
     {
         title: "Quiz Application",

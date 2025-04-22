@@ -8,14 +8,16 @@ const Experience = () => {
     <Container id="experience" className="py-5">
       <Row className="justify-content-center">
         <Row className="mb-5">
-                    <Col>
-                <div className="heading-container">
-                    <div className="heading-line left"></div>
-                    <h2 className="text-center">Experience</h2>
-                    <div className="heading-line right"></div>
-                </div>
-            </Col>
-                    </Row>
+          <Col>
+            <div className="heading-container">
+              <div className="heading-line left"></div>
+              <h2 className="text-center">Experience</h2>
+              <div className="heading-line right"></div>
+            </div>
+          </Col>
+        </Row>
+
+        {/* ChuckleByte Experience */}
         <Col md={2} className="text-center">
           <div className="icon-container">
             <FaBriefcase size={50} style={{ color: "#fff" }} />
@@ -40,9 +42,33 @@ const Experience = () => {
             </p>
           </div>
         </Col>
-        <Col md={2}>
-          
+        <Col md={2}></Col>
+
+        {/* To-Let Globe Experience */}
+        <Col md={2} className="text-center mt-5">
+          <div className="icon-container">
+            <FaBriefcase size={50} style={{ color: "#fff" }} />
+          </div>
         </Col>
+        <Col md={8} className="mt-5">
+          <div className="experience-content">
+            <h3 style={{ color: "#2F65AD" }}>To-Let Globe</h3>
+            <p>
+              <strong>Full Stack Developer Intern | Remote</strong> <br />
+              <em>Jan 2025 – Mar 2025</em>
+            </p>
+            <p>
+              I contributed to a real-world client project using Next.js and Appwrite:
+              <ul>
+                <li>Implemented data creation and retrieval functionalities.</li>
+                <li>Optimized backend performance with efficient queries and indexing, reducing memory overhead.</li>
+                <li>Enhanced app security by adding rate-limiting to password reset requests.</li>
+                <li>Worked across both frontend and backend, contributing to essential feature development.</li>
+              </ul>
+            </p>
+          </div>
+        </Col>
+        <Col md={2}></Col>
       </Row>
     </Container>
   );
